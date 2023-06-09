@@ -20,6 +20,14 @@ body {
     background: none;
 }
 
+.nav_bar:hover {
+     color: rgb(90, 90, 90);
+}
+
+.nav_bar:active {
+    color: rgb(70, 70, 70);
+}
+
 .header_locations {
     font-family: inconsolata;
     font-size: 22px;
