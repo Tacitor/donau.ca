@@ -1,0 +1,40 @@
+@font-face {
+    src: url(fonts/Inconsolata-Regular.ttf);
+    font-family: inconsolata;
+}
+
+@font-face {
+    src: url(fonts/Rakkas-Regular.ttf);
+    font-family: rakkas;
+}
+
+body {
+    background-color: rgb(234, 234, 238);
+}
+
+.nav_bar {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: none;
+    background: none;
+}
+
+.header_locations {
+    font-family: inconsolata;
+    font-size: 22px;
+
+}
+
+.header_title {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    margin-top: 5px;
+
+    font-family: rakkas;
+    font-size: 35px;
+}
