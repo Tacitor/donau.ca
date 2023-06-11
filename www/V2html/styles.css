@@ -86,7 +86,7 @@ body {
     text-align: center;
 
     margin: 0;
-    
+
     top: 120px;
     width: 100%;
 
@@ -126,12 +126,41 @@ body {
 .feature2 {
     width: 200px;
     flex: 1;
-    
+
 }
 
-.feature1 {
-    background-color: lightblue;
+.feature_header_text {
+    font-size: 24px;
+    font-family: inconsolata;
+    text-align: left;
+    color: #1470AF;
+    text-decoration: underline;
+
+    margin-top: 40px;
 }
-.feature2 {
-    background-color: lightcoral;
+
+.feature_date_text {
+    font-size: 22px;
+    font-family: inconsolata;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+
+    margin-top: 15px;
+}
+
+.feature_blurb_text {
+    font-size: 20px;
+    font-family: inconsolata;
+    text-align: left;
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+
+    margin-top: 15px;
+}
+
+.feature1_img,
+.feature2_img {
+    width: 100%;
+    border-radius: 15px;
 }
