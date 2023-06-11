@@ -11,7 +11,6 @@
 body {
     margin: 0;
     background-color: rgb(234, 234, 238);
-    margin-bottom: 500px;
 }
 
 p {
@@ -180,6 +179,7 @@ p {
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 150px;
+    margin-bottom: 100px;
 }
 
 .more_about_image_div,
@@ -229,4 +229,9 @@ p {
     overflow: hidden;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #FFFFFF;
 }
