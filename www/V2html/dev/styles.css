@@ -14,6 +14,16 @@ body {
     margin-bottom: 500px;
 }
 
+p {
+
+    font-size: 20px;
+    font-family: inconsolata;
+    text-align: left;
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    line-height: 150%;
+}
+
 .nav_bar {
     white-space: nowrap;
     position: relative;
@@ -95,8 +105,9 @@ body {
 
 .banner_maintext {
     line-height: 90%;
-    font-size: 120px;
+    font-size: 100px;
     font-family: rakkas;
+    text-transform: uppercase;
 }
 
 .banner_subtext {
@@ -111,6 +122,7 @@ body {
     font-size: 40px;
     font-family: rakkas;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .features_flexbox {
@@ -150,11 +162,6 @@ body {
 }
 
 .feature_blurb_text {
-    font-size: 20px;
-    font-family: inconsolata;
-    text-align: left;
-    color: rgb(50, 50, 50);
-    text-decoration: none;
 
     margin-top: 15px;
 }
@@ -163,4 +170,44 @@ body {
 .feature2_img {
     width: 100%;
     border-radius: 15px;
+}
+
+.more_about_flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 150px;
+}
+
+.more_about_image_div,
+.more_about_text_div {
+    flex: 1;
+}
+
+.more_about_image_div {
+    background-color: lightblue;
+}
+
+.more_about_text_div {
+    background-color: lightcoral;
+}
+
+.more_about_text_header,
+.more_about_text_body {
+    margin-left: 5vw;
+}
+
+.more_about_text_header {
+    font-size: 64px;
+    line-height: 100%;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.more_about_text_body {
+    margin-top: 150px;
 }
