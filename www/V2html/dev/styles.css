@@ -188,11 +188,8 @@ p {
 }
 
 .more_about_image_div {
-    background-color: lightblue;
-}
-
-.more_about_text_div {
-    background-color: lightcoral;
+    position: relative;
+    background-color: lightgreen;
 }
 
 .more_about_text_header,
@@ -210,4 +207,31 @@ p {
 
 .more_about_text_body {
     margin-top: 150px;
+}
+
+.more_about_image_blur {
+    overflow: hidden;
+}
+
+.more_about_blur {
+    width: 100%;
+    min-height: 610px;
+    overflow: hidden;
+    object-fit: cover;
+    
+    border-radius: 10px;
+}
+
+.more_about_image_frame {
+    overflow: hidden;
+}
+
+.more_about_frame {
+    position: absolute;
+    bottom: -5%;
+    right: 5%;
+    width: 75%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px;
 }
