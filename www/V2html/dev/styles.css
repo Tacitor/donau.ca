@@ -187,11 +187,6 @@ p {
     flex: 1;
 }
 
-.more_about_image_div {
-    position: relative;
-    background-color: lightgreen;
-}
-
 .more_about_text_header,
 .more_about_text_body {
     margin-left: 5vw;
@@ -210,12 +205,12 @@ p {
 }
 
 .more_about_image_blur {
-    overflow: hidden;
+    position: relative;
 }
 
 .more_about_blur {
     width: 100%;
-    min-height: 610px;
+    min-height: 760px;
     overflow: hidden;
     object-fit: cover;
     
@@ -228,7 +223,7 @@ p {
 
 .more_about_frame {
     position: absolute;
-    bottom: -5%;
+    bottom: -50px;
     right: 5%;
     width: 75%;
     overflow: hidden;
