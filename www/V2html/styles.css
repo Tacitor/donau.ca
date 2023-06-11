@@ -11,6 +11,7 @@
 body {
     margin: 0;
     background-color: rgb(234, 234, 238);
+    margin-bottom: 500px;
 }
 
 .nav_bar {
@@ -53,35 +54,70 @@ body {
     text-align: center;
 }
 
-#banner_container {
-    position: static;
-    
-    margin-top: 10vh;
-    margin-left: 18vw;
+/*
+<div class="banner_flexbox">
+      <div class="banner_space_left">
+        left
+      </div>
+      <div class="banner_image_holder">
+        <img class="banner_image" src="images/nebula.jpg"
+          alt="Banner Image of a Deep Purple Nebula">
+      </div>
+      <div class="banner_space_right">
+        right
+      </div>
+    </div>
+*/
+.banner_flexbox {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#main_banner_image {
+.banner_space_left,
+.banner_space_right {
+    flex: 1;
+}
 
+.banner_image_holder {
     position: relative;
+    flex: 10;
 
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-
-    width: 75%;
-    height: 75%;
+    height: 600px;
 }
 
-.banner_image {
-    width: 100%;
+.banner_image {    
     height: 100%;
-
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
 }
 
-.banner_text {
+.banner_text, 
+.banner_subtext {
+    left: 0;
     position: absolute;
-    top: 50%;
-    right: 50%;
-    color: wheat;
+    text-align: center;
+
+    margin: 0;
+    line-height: 90%;
+    top: 120px;
+    width: 100%;
+    
+    color: rgb(234, 234, 238);
+    
+    
+}
+
+.banner_text{
+    top: 120px;
+    font-size: 120px;
+    font-family: rakkas;
+}
+
+.banner_subtext {
+    top: 250px;
+    font-size: 50px;
+    font-family: inconsolata;
 }
