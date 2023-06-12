@@ -46,7 +46,7 @@
     top: 100px;
     width: 100%;
 
-    color: rgb(234, 234, 238);    
+    color: rgb(234, 234, 238);
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -161,7 +161,7 @@
     min-height: 760px;
     overflow: hidden;
     object-fit: cover;
-    
+
     border-radius: 10px;
 }
 
@@ -177,9 +177,4 @@
     overflow: hidden;
     object-fit: cover;
     border-radius: 10px;
-}
-
-.footer {
-    height: 60px;
-    background-color: #FFFFFF;
 }
