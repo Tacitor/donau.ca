@@ -96,10 +96,11 @@ p {
 
     margin: 0;
 
-    top: 120px;
+    top: 100px;
     width: 100%;
 
-    color: rgb(234, 234, 238);
+    color: rgb(234, 234, 238);    
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .banner_maintext {
