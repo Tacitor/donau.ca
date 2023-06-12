@@ -53,8 +53,7 @@ p {
 .header_title {
     margin: 0;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45vw;
 
     margin-top: 5px;
 
