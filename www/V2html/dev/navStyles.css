@@ -1,10 +1,10 @@
 @font-face {
-    src: url(../fonts/Inconsolata-Regular.ttf);
+    src: url(fonts/Inconsolata-Regular.ttf);
     font-family: inconsolata;
 }
 
 @font-face {
-    src: url(../fonts/Rakkas-Regular.ttf);
+    src: url(fonts/Rakkas-Regular.ttf);
     font-family: rakkas;
 }
 
