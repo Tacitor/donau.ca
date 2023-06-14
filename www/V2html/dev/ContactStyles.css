@@ -1,3 +1,9 @@
+#nav_contact {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 2px;
+}
+
 .contact_flexbox {
     display: flex;
     flex-direction: row;
