@@ -44,3 +44,8 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+.socials_anchor {
+    text-decoration: none;
+    margin-right: 5px;
+}
