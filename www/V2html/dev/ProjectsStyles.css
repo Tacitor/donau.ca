@@ -37,8 +37,13 @@
     flex: 1;
 }
 
-.box_col {
-    flex: 1;
+.proj_box_content {
+    flex: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 30px;
 }
 
 .box_title,
@@ -49,8 +54,4 @@
     text-transform: uppercase;
     line-height: 100%;
     margin-bottom: 30px;
-}
-
-.proj_desc {
-    margin-bottom: 50px;
 }
