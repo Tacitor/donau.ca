@@ -6,4 +6,51 @@
 
 .main_content {
     flex: 1;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 40px;
+
+    margin-bottom: 100px;
+}
+
+.header {
+    margin-bottom: 300px;
+}
+
+.header_text {
+    font-size: 64px;
+    line-height: 100%;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.proj_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.box_title {
+    flex: 1;
+}
+
+.box_col {
+    flex: 1;
+}
+
+.box_title,
+.proj_header {
+    font-size: 24px;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.proj_desc {
+    margin-bottom: 50px;
 }
