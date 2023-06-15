@@ -10,6 +10,8 @@
 
 body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: rgb(234, 234, 238);
 }
 
@@ -60,6 +62,12 @@ p {
     font-family: rakkas;
     font-size: 40px;
     text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .footer {

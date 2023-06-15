@@ -1,3 +1,7 @@
+.body_section {
+    flex: 1;
+}
+
 .header_title {
     margin: 0;
     position: absolute;
