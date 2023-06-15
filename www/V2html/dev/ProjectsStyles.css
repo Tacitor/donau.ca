@@ -3,3 +3,7 @@
     border-bottom-style: solid;
     padding-bottom: 2px;
 }
+
+.main_content {
+    flex: 1;
+}
