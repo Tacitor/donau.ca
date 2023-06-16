@@ -58,6 +58,11 @@
     margin-bottom: 30px;
 }
 
+.proj_header:link,
+.proj_header:visited {
+    color: #1470AF;
+}
+
 .proj_imgs_div {
     display: flex;
     flex-direction: row;
