@@ -43,3 +43,24 @@
     font-size: 24px;
     font-weight: bold;
 }
+
+.img_txt_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    gap: 100px;
+
+    margin-top: 50px;
+}
+
+.img_txt_section_txt,
+.img_txt_section_img_div {
+    flex: 1;
+}
+
+.img_txt_section_img {
+    width: 100%;
+
+    border-radius: 10px;
+}
