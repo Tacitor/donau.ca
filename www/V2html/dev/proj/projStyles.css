@@ -1,0 +1,45 @@
+.content {
+    flex: 1;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    margin-top: 70px;
+}
+
+.main_title {
+    font-size: 64px;
+    line-height: 100%;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.info_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+#info_bar_type {
+    flex: 1;
+}
+
+.info_bar_section {
+    overflow: hidden;
+
+}
+
+.info_bar_header {
+    font-family: inconsolata;
+    font-size: 20px;
+}
+
+.info_bar_value {
+    font-family: inconsolata;
+    font-size: 24px;
+    font-weight: bold;
+}
