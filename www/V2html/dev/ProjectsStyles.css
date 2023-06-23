@@ -155,3 +155,7 @@
 .contact_text_link_p {
     margin-top: 10px;
 }
+
+.contact_text_link {
+    display: inline-block;
+}
