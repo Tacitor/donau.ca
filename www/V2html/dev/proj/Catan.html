@@ -1,37 +1,173 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="About" content="width=device-width">
     <title>About</title>
-    <link href="images/favicon.ico" rel="icon">
+    <link href="../images/favicon.ico" rel="icon">
 
     <link href="../navStyles.css" rel="stylesheet">
-    <link href="CatanStyles.css" rel="stylesheet">
+    <link href="projStyles.css" rel="stylesheet">
 
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
 
-      <div id="nav_bar_div">
-        <a class="nav_bar header_locations" id="nav_projects"
-          href="../Projects.html">Projects</a>
-        <a class="nav_bar header_locations" id="nav_about" href="../About.html">About</a>
-        <a class="nav_bar header_locations" id="nav_contact"
-          href="../Contact.html">Contact</a>
-        <a class="nav_bar header_title" href="https://donau.ca">DONAU</a>
-      </div>
+        <div id="nav_bar_div">
+            <a class="nav_bar header_locations" id="nav_projects" href="../Projects.html">Projects</a>
+            <a class="nav_bar header_locations" id="nav_about" href="../About.html">About</a>
+            <a class="nav_bar header_locations" id="nav_contact" href="../Contact.html">Contact</a>
+            <a class="nav_bar header_title" href="https://donau.ca">DONAU</a>
+        </div>
 
-      <div class="content">
-        About catan project here
+        <div class="content">
+            <div class="main_title">
+                Settlers of Catan
+            </div>
 
-      </div>
+            <div class="info_bar">
+                <div class="info_bar_section">
+                    <div class="info_bar_header">
+                        Start
+                    </div>
+                    <div class="info_bar_value">
+                        Nov. 2021
+                    </div>
+                </div>
+                <div class="info_bar_section">
+                    <div class="info_bar_header">
+                        Technologies
+                    </div>
+                    <div class="info_bar_value">
+                        Java, NetBeans
+                    </div>
+                </div>
+                <div id="info_bar_type" class="info_bar_section">
+                    <div class="info_bar_header">
+                        Type
+                    </div>
+                    <div class="info_bar_value">
+                        Online Game
+                    </div>
+                </div>
+                <div class="info_bar_section">
+                    <div class="info_bar_header">
+                        Last updated
+                    </div>
+                    <div class="info_bar_value">
+                        Jan. 2023
+                    </div>
+                </div>
 
-      <div class="footer">
+            </div>
 
-      </div>
+            <div class="view_source_div">
+                <a class="view_source_anchor" href="https://github.com/Tacitor/ICS4U-Settlers-Of-Catan" target="_blank">
+                    <div class="view_source_anchor_flex">
+                        <div class="view_source_anchor_flex_svg">
+                            <svg class="view_source_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32" fill="#eaeaee">
+                                <path
+                                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+        
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="view_source_anchor_flex_text">
+                            View Source
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="img_txt_section">
+                <div class="img_txt_section_txt">
+                    <p class="proj_p">
+                        Settlers of Catan is a recreation of the popular boardgame made entirely in Java. The game was
+                        made primarily using NetBeans IDE 8.2. Originally the game started out as the final project for
+                        my grade 12 programming course ICS4U, but I enjoyed working on it so much it quickly became
+                        more. Originally the project began as a collaboration between me and a classmate Evan. The first
+                        ~2000 lines of code we evenly written between Evan and I. After the project for ICS4U was
+                        completed, I continued to work on the project solo adding the remaining ~8000 lines of code
+                        slowly over the last 2 years.
+                    </p>
+                </div>
+
+                <div class="img_txt_section_img_div">
+                    <img class="img_txt_section_img" src="../images/catan.png" alt="TEMP IMAGE">
+                </div>
+
+            </div>
+
+            <div class="img_txt_section">
+                <div class="img_txt_section_img_div">
+                    <img class="no_border_radius img_txt_section_img" src="images/CatanConnect.png" alt="TEMP IMAGE">
+                </div>
+
+                <div class="img_txt_section_txt">
+                    <p class="proj_p">
+                        The entire code base is written without the use of an external libraries or frameworks. It's
+                        either all custom code or included java libraries. The graphics are all drawn with AWT or
+                        Graphics2D java libraries. Nearly all of the art assets and sprites were drawn by Alex Eckardt,
+                        whom I owe a huge thank you. One of the features I am most proud of is the online play
+                        capabilities. I'll admit it is definitely not the cleanest code, and barely works, but I am very
+                        pleased that I got it to work at all. The current net code makes use of Sockets and
+                        ServerSockets to set up communication. A lot of the connection and initialization is riddled
+                        with bugs, and I would like to rewrite large portions in the future. As of writing the current
+                        system sets up a hub server on the computer of player 1 (the red player) and auto connects a
+                        client connection for the red player. Then the remaining player create a client instance and
+                        connect to the red players Computer over the selected port.
+                    </p>
+                </div>
+            </div>
+
+            <div class="txt_section">
+
+                As of writing (June 2023) I am currently transitioning all the remaining GUI elements away from NetBeans
+                JFrame GUI builder. Legacy versions of Catan make heavy use of NetBeans' GUI builder. The most recent
+                progress was made January 2023, where the full main menu was made using custom GUI elements. When I
+                resume work on the catan project I will be completing the transition to my custom GUI menu elements. The
+                next steps will then probably include a rewriting of the net code and the possibility of dedicated
+                servers that take the hosting responsibility away from the players. I wish to achieve this by running
+                special server code on my Raspberry Pi 3+ that hosts prepared and ready game servers that can be
+                connected to by players and selected from an in-game menu.
+                <br>
+                <br>
+
+                Working on this Catan project is something I do intermittently, it is rarely a main focus. I have a
+                strong burst of productivity here and there, but I often also let my focus wander to other projects too.
+                I tend to work on Catan at times where I find I have more excess free time that I can dedicate to such
+                passion projects.
+
+            </div>
+
+            <div class="dual_imgs_div">
+                <div class="dual_imgs_single">
+                    <img class="dual_imgs_img" src="images/CatanMainMenu.png" alt="TEMP IMAGE">
+
+                    <div class="image_desc">
+                        The new main menu of the Catan game, using the new custom menu elements.
+                    </div>
+                </div>
+
+                <div class="dual_imgs_single">
+                    <img class="dual_imgs_img" src="images/Catan4Players.png" alt="TEMP IMAGE">
+
+                    <div class="image_desc">
+                        A game between 4 players.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+        </div>
 
     </div>
 
-  </body>
+</body>
+
 </html>
