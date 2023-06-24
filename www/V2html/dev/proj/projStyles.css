@@ -96,8 +96,6 @@
     justify-content: space-between;
 
     gap: 100px;
-
-    margin-bottom: 50px;
 }
 
 .img_txt_section_txt,
@@ -119,9 +117,11 @@
     border-radius: 0px;
 }
 
-.txt_section {
+.break_spacer {
     margin-top: 50px;
+}
 
+.txt_section {
     font-size: 24px;
     font-family: inconsolata;
     text-align: left;
@@ -131,9 +131,6 @@
 }
 
 .dual_imgs_div {
-    margin-top: 50px;
-    margin-bottom: 60px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,4 +154,8 @@
     color: rgb(50, 50, 50);
     text-decoration: none;
     line-height: 150%;
+}
+
+.footer {
+    margin-top: 60px;
 }
