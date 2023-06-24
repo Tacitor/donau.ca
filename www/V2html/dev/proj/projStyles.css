@@ -156,6 +156,14 @@
     line-height: 150%;
 }
 
+.cust_anchor {
+    color: #1470AF;
+}
+
+.cust_anchor:visited {
+    color: #1470AF;
+}
+
 .footer {
     margin-top: 60px;
 }
