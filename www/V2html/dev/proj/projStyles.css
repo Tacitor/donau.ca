@@ -44,7 +44,7 @@
     font-weight: bold;
 }
 
-.view_source_div {
+.nav_button_div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -54,7 +54,7 @@
 
 }
 
-.view_source_anchor {
+.nav_button_anchor {
     background-color: #000000;
     text-decoration: none;
     padding: 5px;
@@ -71,11 +71,11 @@
 
 }
 
-.view_source_anchor:hover {
+.nav_button_anchor:hover {
     background-color: #303030;
 }
 
-.view_source_anchor_flex {
+.nav_button_anchor_flex {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -84,7 +84,7 @@
     align-items: center;
 }
 
-.view_source_anchor_flex_text {
+.nav_button_anchor_flex_text {
     flex: 1;
 
     margin-right: 10px;
