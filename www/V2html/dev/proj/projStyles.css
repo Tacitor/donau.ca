@@ -84,6 +84,10 @@
     align-items: center;
 }
 
+.nav_button_anchor_flex_svg_wide {
+    margin-left: 5px;
+}
+
 .nav_button_anchor_flex_text {
     flex: 1;
 
@@ -106,6 +110,7 @@
 
 .proj_p {
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .img_txt_section_img {
