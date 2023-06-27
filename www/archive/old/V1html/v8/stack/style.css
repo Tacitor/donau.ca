@@ -1,0 +1,77 @@
+html{
+  overflow-x:hidden;
+}
+
+#title {
+  width:100%;
+  text-align: center;
+  font-size:6vw;
+  color: white;
+  top:11vw;
+  position:absolute;
+}
+
+.links {
+	background-color: #6D7993;
+}
+
+#cover{
+  width:100%;
+  filter: brightness(35%)
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(65, 0, 0);
+  font-size: 2vw;
+}
+
+ul li {
+float:left;
+border-right: 5px solid rgb(255, 255, 255);
+}
+
+ul li a {
+  display: block;
+  color: rgb(221, 221, 221);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: rgb(36, 0, 6);
+}
+
+ul li a:active {
+	background-color: rgb(0, 0, 0);
+}
+
+a:link {
+	color: rgb(221, 221, 221);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(161, 57, 57);
+	text-decoration: none;
+}
+
+a:active {
+	color: #310000;
+}
+
+p {
+  font-size: 1.8vw;
+  margin-left: 4%;
+  margin-right: 4%;
+  
+}
+
+#email {
+  color:  rgb(112, 11, 11);
+  text-decoration: underline;
+}
