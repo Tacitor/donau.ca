@@ -135,11 +135,24 @@
                         development. Many of the team members were writting new code and changing existing code in
                         parralele with others simultainiuously. We made heavy use of branches and only merged in chanes
                         to the main branch once a given feature was complete.
+                        <br>
+                        <br>
+                        This project has the most intertwined and convulutend network graph of any other project I have
+                        worked on to date. This is a result of the large ammout of parralization and simulataious work
+                        as all 6 members were working on the project. If you scroll all the way to the right on the
+                        netowrk graph it even appears that some commits were made weaving in and out of April 2nd and
+                        3rd. Quite frankly I am not sure what causes this strange time travel behaviour to appear as
+                        such on the graph.
+                        <br>
+                        <br>
+                        Another interesting aspect of this project is that it is able to interface with a remote
+                        repository from the Laserfiche company. These repos have a very novel file structure. In a given
+                        repository each entry is identified exclusivly with an entry ID. There is no file stuctore, or
+                        access to the nested folder. If a folder contains other entries then this is discored by using
+                        the API to specifically queary for child entries. These child entires can again just be directly
+                        acces with the Entry ID withnout needing to even know it exists withing a folder. These quirks
+                        made it very interesting to get both local entires and remote entires interoperable.
 
-                        <br>
-                        <br>
-                        This project has the most condenced and convulutend network graph of any other project I have
-                        worked on to date.
                     </p>
                 </div>
 
@@ -153,6 +166,9 @@
 
             <div class="single_imgs_div">
                 <div class="single_imgs_single">
+                    <div class="image_desc">
+                        Note: This network graph scrolls horizotaly.
+                    </div>
                     <img class="single_imgs_img" src="images/FileProcessorGraph.png"
                         alt="A screenshot showing the entire Git commit network graph as rendered on GitHub.">
 
