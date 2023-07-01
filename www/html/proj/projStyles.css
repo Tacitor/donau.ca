@@ -177,7 +177,7 @@
     overflow: hidden;
     overflow-x: auto;
 
-    scrollbar-color: red orange;
+    scrollbar-color: rgb(50, 50, 50) rgb(150, 150, 150);
     scrollbar-width: thin;
 }
 
