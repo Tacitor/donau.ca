@@ -92,20 +92,21 @@
                 <div class="img_txt_section_txt">
                     <p class="proj_p">
                         The JSON Routine File Processor is the final project of the ENGG*1420 OOP Course I took in the
-                        winter 2023 semester at the UoG. It was developed by a team on 6. The program in written
+                        winter 2023 semester at the UoG. It was developed by a team of 6. The program is written
                         entirely in Java and makes use of the Laserfiche company's remote repository API. The program
                         has the ability to read in a .JSON file using the Jackson JSON parser for Java. The structure
-                        from the JSON in stored in a Plain Old Java Object (POJO) heirachy that extracts the relational
-                        structure from the JSON. The POJO structure is then passed off the the Sequencer that converts
-                        the POJO structure into a class heirachy using feature rich classes that possess methods to
-                        process data.
-                        <br><br>
+                        from the JSON is stored in a Plain Old Java Object (POJO) hierarchy that extracts the relational
+                        structure from the JSON. The POJO structure is then passed off the Sequencer that converts the
+                        POJO structure into a class hierarchy using feature rich classes that possess methods to process
+                        data.
+                        <br>
+                        <br>
                         The .JSON file contains all the instructions for a given processing scenario. Every scenario is
-                        broken up into processing elements. A processing element perfomas an action. It might act as a
+                        broken up into processing elements. A processing element performs an action. It might act as a
                         filter, or print out information, or list child directories or files. Each Processing element is
-                        required to have input entries and parameters. The input entries are can be either remote or
-                        local entries. Any entry can either be a file or a directory (folder). This yeilds a total of 4
-                        possible identities for and entry. This means an Entry is either a local File, local Folder,
+                        required to have input entries and parameters. The input entries can be either remote or local
+                        entries. Any entry can either be a file or a directory (folder). This yields a total of 4
+                        possible identities for an entry. This means an Entry is either a local File, local Folder,
                         remote File, or remote Folder. The JSON file then provides the parameters of the processing
                         element, which are specific to each type of processing element. One thing to note is that only
                         the first processing element needs to provide the input entries. All subsequent processing
@@ -119,10 +120,10 @@
             <div class="txt_section">
 
                 All of this allows the JSON Routine File Processor to automatically process, many Entries at once. This
-                migh include listing all the sub folders in a given folder, and renameing all the folders at once. Then
+                might include listing all the sub folders in a given folder and renaming all the folders at once. Then
                 Go into each subfolder and select only text files that contain the phrase "Object Oriented Programming".
-                The the next processing elementmight further narrow down the selected Entries to only ones that are over
-                500 MB in size. The final processing element might then print out the meta data of the ramainign files.
+                The next processing element might further narrow down the selected Entries to only ones that are over
+                500 MB in size. The final processing element might then print out the meta data of the remaining files.
 
             </div>
 
@@ -131,27 +132,28 @@
             <div class="img_txt_section">
                 <div class="img_txt_section_txt">
                     <p class="proj_p">
-                        This project made heavy use of GitGub to control the versions of the program while it was in
-                        development. Many of the team members were writting new code and changing existing code in
-                        parralele with others simultainiuously. We made heavy use of branches and only merged in chanes
-                        to the main branch once a given feature was complete.
+                        This project made heavy use of GitHub to control the versions of the program while it was in
+                        development. Many of the team members were writing new code and changing existing code in
+                        parallel with others simultaneously. We made heavy use of branches and only merged in changes to
+                        the main branch once a given feature was complete.
                         <br>
                         <br>
-                        This project has the most intertwined and convulutend network graph of any other project I have
-                        worked on to date. This is a result of the large ammout of parralization and simulataious work
+                        This project has the most intertwined and convoluted network graph of any other project I have
+                        worked on to date. This is a result of the large amount of parallelization and simultaneous work
                         as all 6 members were working on the project. If you scroll all the way to the right on the
-                        netowrk graph it even appears that some commits were made weaving in and out of April 2nd and
-                        3rd. Quite frankly I am not sure what causes this strange time travel behaviour to appear as
-                        such on the graph.
+                        network graph it even appears that some commits were made weaving in and out of April 2nd and
+                        3rd. Quite frankly I am not sure what causes this strange time travel behavior to appear as such
+                        on the graph.
                         <br>
                         <br>
                         Another interesting aspect of this project is that it is able to interface with a remote
                         repository from the Laserfiche company. These repos have a very novel file structure. In a given
-                        repository each entry is identified exclusivly with an entry ID. There is no file stuctore, or
-                        access to the nested folder. If a folder contains other entries then this is discored by using
-                        the API to specifically queary for child entries. These child entires can again just be directly
-                        acces with the Entry ID withnout needing to even know it exists withing a folder. These quirks
-                        made it very interesting to get both local entires and remote entires interoperable.
+                        repository each entry is identified exclusively with an entry ID. There is no file structure, or
+                        access to the nested folder. If a folder contains other entries, then this is discovered by
+                        using the API to specifically query for child entries. These child entries can again just be
+                        directly accessed with the Entry ID without needing to even know it exists withing a folder.
+                        These quirks made it very interesting to get both local entries and remote entries
+                        interoperable.
 
                     </p>
                 </div>
@@ -167,7 +169,7 @@
             <div class="single_imgs_div">
                 <div class="single_imgs_single">
                     <div class="image_desc">
-                        Note: This network graph scrolls horizotaly.
+                        Note: This network graph scrolls horizontally.
                     </div>
                     <img class="single_imgs_img" src="images/FileProcessorGraph.png"
                         alt="A screenshot showing the entire Git commit network graph as rendered on GitHub.">
