@@ -30,7 +30,7 @@
 }
 
 .info_bar_section {
-    overflow: hidden;
+    overflow: visible;
 
 }
 
@@ -169,4 +169,30 @@
 
 .cust_anchor:visited {
     color: #1470AF;
+}
+
+.single_imgs_div {
+    border-radius: 10px;
+
+    overflow: hidden;
+    overflow-x: auto;
+
+    scrollbar-color: rgb(50, 50, 50) rgb(150, 150, 150);
+    scrollbar-width: thin;
+}
+
+.single_imgs_img {
+    height: 100%;
+    border-radius: 10px;
+
+
+}
+
+.image_desc {
+    font-size: 20px;
+    font-family: inconsolata;
+    text-align: left;
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    line-height: 150%;
 }

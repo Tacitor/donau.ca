@@ -1,0 +1,19 @@
+/* width */
+.single_imgs_div::-webkit-scrollbar {
+    height: 8px;
+}
+
+/* Track */
+.single_imgs_div::-webkit-scrollbar-track {
+    background: rgb(150, 150, 150);
+}
+
+/* Handle */
+.single_imgs_div::-webkit-scrollbar-thumb {
+    background: rgb(50, 50, 50);
+}
+
+/* Handle on hover */
+.single_imgs_div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
