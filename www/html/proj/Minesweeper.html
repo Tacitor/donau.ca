@@ -136,6 +136,52 @@
                     </div>
                 </div>
 
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+
+                    We wrote the this game after I had added networking to my <a
+                        class="cust_anchor" href="Catan.html">Catan</a> game and
+                    the net code is derived off of early versions of the Catan
+                    netcode. This means the interface it very simular to early
+                    catan versions. The spoke-and-hub network aretechture is
+                    also shared. The game state is transmitted by writting the
+                    entire board state and some control variables to a file on
+                    disk. Then this file is read in by a seperate thread of the
+                    program in converted into a serial string of bytes which are
+                    sent to the server. The server then redestributes the file
+                    to the two clients. Once a client recieves an updated game
+                    state the thread resposible to connect to the server calls a
+                    trigger in the main thread of the program to read in the
+                    file off of disk again.
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/MinesweeperMenu.png"
+                            alt="A screenshot of the main menu.">
+
+                        <div class="image_desc">
+                            The main menu that was one of my main contributions.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/MinesweeperConnect.png"
+                            alt="A screenshot of a game between 4 players.">
+
+                        <div class="image_desc">
+                            The view seen by the second player when attempting
+                            to connect to the first player.
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
