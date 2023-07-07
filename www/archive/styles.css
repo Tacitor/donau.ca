@@ -104,3 +104,21 @@
 .big_break_spacer {
     margin-top: 100px;
 }
+
+.break_spacer {
+    margin-top: 50px;
+}
+
+.txt_section {
+    font-size: 24px;
+    font-family: inconsolata;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    line-height: 150%;
+}
+
+.note_span {
+    font-weight: bold;
+    color: #B7410E;
+}
