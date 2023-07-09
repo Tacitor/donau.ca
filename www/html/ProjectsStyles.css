@@ -1,3 +1,13 @@
+.banner_top {
+    background-image: url("images/projBanner.png");
+    background-color: #BEC8D4;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    margin-bottom: 80px;
+}
+
 #nav_projects {
     border-bottom-width: 2px;
     border-bottom-style: solid;
@@ -15,7 +25,10 @@
 }
 
 .header {
-    margin-bottom: 400px;
+    margin-top: 40px;
+    margin-bottom: 300px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .header_text {
