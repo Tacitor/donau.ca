@@ -1,15 +1,32 @@
+.banner_top {
+    background-image: url("images/banner.png");
+    background-color: rgba(183, 65, 14, 0.4);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    margin-bottom: 80px;
+
+    color: rgb(234, 234, 238);
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 1);
+
+
+}
+
 .main_content {
     flex: 1;
 
     margin-left: 10vw;
     margin-right: 10vw;
-    margin-top: 40px;
 
     margin-bottom: 100px;
 }
 
 .header {
-    margin-bottom: 400px;
+    margin-top: 40px;
+    margin-bottom: 300px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .header_text {
