@@ -149,7 +149,30 @@
                 <div class="img_txt_section">
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            Text
+                            Before beginning to clean the keyboard I first
+                            wanted to see if I could even get it working again.
+                            But becuase I do not have any devices that connects
+                            to a keyboard over an 8P8C connector I needed to
+                            make an adapter first. In my research I came accross
+                            a device called a Soarer's Converter. This is a
+                            little device that will activly convert the signals
+                            from the M122 to a USB keyboard signaling. To build
+                            my Soarer's Converter I used a Pro Micro arduino
+                            clone. It is a little microcontroller that uses an
+                            ATmega32U4 processsor. It uses the firmware written
+                            by this person by the name of Soarer, and uses a
+                            custom config I wrote for the M122 Battlecruiser.
+                            This custom config was needed because there are
+                            certain key that do not work. While testing I found
+                            that the left shift key does not respond. Thefore
+                            the translation microcontroller will <i>press</i> a
+                            shift key when the play button left of the shift key
+                            is pressed. To connect the convert to the keyobard a
+                            female-male dupont cable is used. The female end of
+                            the dupont cable is used to connect to the pinout on
+                            the PCB of the keyboard. Then the male ends of the
+                            dupont cable are bent over and soldered into the
+                            through holes of the Pro Micro.
                         </p>
                     </div>
 
