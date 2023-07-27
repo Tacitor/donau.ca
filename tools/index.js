@@ -1,13 +1,20 @@
 const sharp = require('sharp');
 
-sharp('lighthouse_sunset.webp')
-    .resize(1000, 750, {
-        kernel: sharp.kernel.cubic,
-    })
-    .webp({
-        smartSubsample: true,
-        preset: 'photo',
-        effort: 6,
-        quality: 80
-    })
-    .toFile('output/test.webp');
+let dims = [[1000, 750], [2000, 1500]]
+
+for (var dim = 0; dim < dims.length; dim++) {
+
+    sharp('../www/html/images/modleM.webp')
+        .resize(dims[dim][0], dims[dim][1], {
+            kernel: sharp.kernel.cubic,
+        })
+        .webp({
+            smartSubsample: true,
+            preset: 'photo',
+            effort: 6,
+            quality: 80
+        })
+        .toFile('output/test-' + dims[dim][0] + '.webp');
+
+
+}
