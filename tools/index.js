@@ -1,10 +1,11 @@
 const sharp = require('sharp');
 
 let dims = [[1000, 750], [2000, 1500]]
+var input = 'lighthouse_sunset'
 
 for (var dim = 0; dim < dims.length; dim++) {
 
-    sharp('../www/html/images/modleM.webp')
+    sharp(input + '.webp')
         .resize(dims[dim][0], dims[dim][1], {
             kernel: sharp.kernel.cubic,
         })
@@ -14,7 +15,7 @@ for (var dim = 0; dim < dims.length; dim++) {
             effort: 6,
             quality: 80
         })
-        .toFile('output/test-' + dims[dim][0] + '.webp');
+        .toFile(input + '-' + dims[dim][0] + '.webp');
 
 
 }
