@@ -21,8 +21,10 @@ public class Auto {
     public static void main(String[] args) {
         //Example for the main output
         //let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350], [2048, 1536]]
-        
+
         String input = "256\u00D7192, 1030\u00D7773, 1440\u00D71080, 1750\u00D71313, 2016\u00D71512";
+        String src = "images/pi_cropped.webp";
+
         StringBuilder tempInput;
 
         // first pass is to convert the unicode char into an 'x'
@@ -39,23 +41,59 @@ public class Auto {
 
         //overwrite the old input
         input = tempInput.toString();
-        
+
         //split the input at the commas
         newInput = input.split(", ", 0);
-        
+
         //setup the structor for the data in the most accessible way
         String[][] easyAccess = new String[newInput.length][2];
-        
+
         //loop through the dims
         for (int i = 0; i < newInput.length; i++) {
             easyAccess[i] = newInput[i].split("x");
         }
-        
+
         //Set up the final main output string
         tempInput = new StringBuilder();
         tempInput.append("let dims = ");
         tempInput.append(Arrays.deepToString(easyAccess));
-        
+
+        String mainOutput = tempInput.toString();
+        System.out.println(mainOutput);
+
+        //Now do the secondary output
+        tempInput = new StringBuilder();
+        tempInput.append("srcset=\"");
+
+        //carve up the src
+        String[] srcArr = src.split("\\.");
+
+        //put in the first entry
+        tempInput.append(srcArr[0]);
+        tempInput.append('-');
+        tempInput.append(easyAccess[0][0]);
+        tempInput.append('.');
+        tempInput.append(srcArr[1]);
+        tempInput.append(" ");
+        tempInput.append(easyAccess[0][0]);
+        tempInput.append("w");
+
+        //loop to add in the rest
+        for (int i = 1; i < easyAccess.length; i++) {
+            tempInput.append(",\n        ");
+            tempInput.append(srcArr[0]);
+            tempInput.append('-');
+            tempInput.append(easyAccess[i][0]);
+            tempInput.append('.');
+            tempInput.append(srcArr[1]);
+            tempInput.append(" ");
+            tempInput.append(easyAccess[i][0]);
+            tempInput.append("w");
+
+        }
+
+        tempInput.append("\"\nsizes=\"50vw\"");
+
         System.out.println(tempInput.toString());
     }
 
