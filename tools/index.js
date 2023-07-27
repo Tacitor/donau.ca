@@ -1,6 +1,6 @@
 const sharp = require('sharp');
 
-let dims = [[1000, 750], [2000, 1500]]
+let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350], [2048, 1536]]
 var input = 'lighthouse_sunset'
 
 for (var dim = 0; dim < dims.length; dim++) {
