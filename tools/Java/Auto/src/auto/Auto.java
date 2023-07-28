@@ -8,6 +8,9 @@
 package auto;
 
 import java.util.Arrays;
+import java.awt.datatransfer.StringSelection;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
 
 /**
  *
@@ -94,7 +97,13 @@ public class Auto {
 
         tempInput.append("\"\nsizes=\"50vw\"");
 
-        System.out.println(tempInput.toString());
+        String secondaryOutput = tempInput.toString();
+        System.out.println(secondaryOutput);
+
+        //copy the main output to the clipboard
+        StringSelection stringSelection = new StringSelection(mainOutput);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
     }
 
 }
