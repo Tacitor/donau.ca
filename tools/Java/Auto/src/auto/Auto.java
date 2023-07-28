@@ -26,7 +26,7 @@ public class Auto {
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
         // [2048, 1536]]
 
-        String input = "256\u00D7192, 1030\u00D7773, 1440\u00D71080, 1750\u00D71313, 2016\u00D71512";
+        String input = "256\u00D7144, 860\u00D7484, 1190\u00D7669, 1530\u00D7861, 1810\u00D71018, 2048\u00D71152";
         String src = "images/pi_cropped.webp";
 
         StringBuilder tempInput;

@@ -1,7 +1,8 @@
 const sharp = require('sharp');
 
-let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350], [2048, 1536]]
-var src = "images/pi_cropped.webp"
+let dims = [[256, 144], [860, 484], [1190, 669], [1530, 861], [1810, 1018], [2048, 1152]]
+var src = "pi_cropped"
+var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/images/'
 
 for (var dim = 0; dim < dims.length; dim++) {
 
