@@ -1,12 +1,12 @@
 const sharp = require('sharp');
 
-let dims = [[256, 144], [860, 484], [1190, 669], [1530, 861], [1810, 1018], [2048, 1152]]
-var src = "pi_cropped"
-var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/images/'
+let dims = [[256, 144], [720, 405], [1180, 664], [1650, 928], [2016, 1134], [2200, 1238]]
+var src = "banner.png"
+var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/images/'
 
 for (var dim = 0; dim < dims.length; dim++) {
 
-    sharp(src + '.webp')
+    sharp(path + 'originals/' + src)
         .resize(dims[dim][0], dims[dim][1], {
             kernel: sharp.kernel.cubic,
         })
