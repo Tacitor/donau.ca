@@ -27,7 +27,7 @@ public class Auto {
         // [2048, 1536]]
 
         String input = "256\u00D7144, 720\u00D7405, 1180\u00D7664, 1650\u00D7928, 2016\u00D71134, 2200\u00D71238";
-        String src = "images/pi_cropped.webp";
+        String src = "images/banner.png";
 
         StringBuilder tempInput;
 
@@ -77,7 +77,7 @@ public class Auto {
         tempInput.append('-');
         tempInput.append(easyAccess[0][0]);
         tempInput.append('.');
-        tempInput.append(srcArr[1]);
+        tempInput.append("webp");
         tempInput.append(" ");
         tempInput.append(easyAccess[0][0]);
         tempInput.append("w");
@@ -89,7 +89,7 @@ public class Auto {
             tempInput.append('-');
             tempInput.append(easyAccess[i][0]);
             tempInput.append('.');
-            tempInput.append(srcArr[1]);
+            tempInput.append("webp");
             tempInput.append(" ");
             tempInput.append(easyAccess[i][0]);
             tempInput.append("w");
