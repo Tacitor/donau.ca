@@ -26,8 +26,9 @@ public class Auto {
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
         // [2048, 1536]]
 
-        String input = "256\u00D7144, 720\u00D7405, 1180\u00D7664, 1650\u00D7928, 2016\u00D71134, 2200\u00D71238";
-        String src = "images/banner.png";
+        String input = "256\u00D7248, 540\u00D7523, 830\u00D7804, 1150\u00D71114, 1430\u00D71386, 1660\u00D71608, 1860\u00D71802, 2048\u00D71984";
+        String src = "images/pi.png";
+        //=-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
 
