@@ -24,10 +24,9 @@ public class Auto {
     public static void main(String[] args) {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
-        // [2048, 1536]]
 
-        String input = "256\u00D7248, 540\u00D7523, 830\u00D7804, 1150\u00D71114, 1430\u00D71386, 1660\u00D71608, 1860\u00D71802, 2048\u00D71984";
-        String src = "images/pi.png";
+        String input = "256\u00D7352, 580\u00D7797, 784\u00D71077, 980\u00D71346, 1150\u00D71580";
+        String src="images/lighthouse_frame.png";
         //=-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
