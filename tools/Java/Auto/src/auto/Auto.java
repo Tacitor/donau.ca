@@ -25,9 +25,9 @@ public class Auto {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
-        String input = "256\u00D7352, 580\u00D7797, 784\u00D71077, 980\u00D71346, 1150\u00D71580";
-        String src="images/lighthouse_frame.png";
-        //=-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
+        String input = "256\u00D7261, 784\u00D7800, 1150\u00D71173, 1430\u00D71459, 1660\u00D71694, 1860\u00D71898, 2048\u00D72090";
+        String src = "images/SkiCropped.png";
+        // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
 
