@@ -1,8 +1,9 @@
 const sharp = require('sharp');
 
-let dims = [[256, 144], [860, 484], [1190, 669], [1530, 861], [1810, 1018], [2048, 1152]];
-var src = 'pi_cropped';
+let dims = [[256, 192], [1030, 773], [1440, 1080], [1750, 1313], [2016, 1512]]
+var src = 'SkiWide';
 var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/images/';
+var doLossless = false;
 
 for (var dim = 0; dim < dims.length; dim++) {
 
@@ -14,7 +15,8 @@ for (var dim = 0; dim < dims.length; dim++) {
             smartSubsample: true,
             preset: 'photo',
             effort: 6,
-            quality: 80
+            quality: 80,
+            lossless: doLossless
         })
         .toFile(path + src + '-' + dims[dim][0] + '.webp');
 
