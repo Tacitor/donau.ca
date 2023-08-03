@@ -25,8 +25,8 @@ public class Auto {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
-        String input = "256\u00D7192, 1030\u00D7773, 1440\u00D71080, 1750\u00D71313, 2016\u00D71512";
-        String src="images/SkiWide.png";
+        String input = "256\u00D7139, 1130\u00D7612, 1580\u00D7856, 1920\u00D71040, 2048\u00D71109";
+        String src="images/WebserverVSCode.png";
         // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;

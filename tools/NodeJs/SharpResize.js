@@ -1,8 +1,8 @@
 const sharp = require('sharp');
 
-let dims = [[256, 192], [1030, 773], [1440, 1080], [1750, 1313], [2016, 1512]]
-var src = 'SkiWide';
-var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/images/';
+let dims = [[256, 139], [1130, 612], [1580, 856], [1920, 1040], [2048, 1109]]
+var src = 'WebserverVSCode';
+var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/proj/images/';
 var doLossless = false;
 
 for (var dim = 0; dim < dims.length; dim++) {
