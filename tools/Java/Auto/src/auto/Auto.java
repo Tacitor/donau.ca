@@ -25,8 +25,8 @@ public class Auto {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
-        String input = "256\u00D7105, 1009\u00D7412, 1610\u00D7657, 2048\u00D7836";
-        String src="images/MinesweeperConnect.png";
+        String input = "256\u00D7295, 830\u00D7956, 1150\u00D71325, 1380\u00D71589, 1570\u00D71808, 1750\u00D72016, 1900\u00D72188, 2048\u00D72359";
+        String src="images/ModelMMicrocontroller.webp";
         // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
