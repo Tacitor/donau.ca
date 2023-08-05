@@ -1,7 +1,7 @@
 const sharp = require('sharp');
 
-let dims = [[256, 295], [830, 956], [1150, 1325], [1380, 1589], [1570, 1808], [1750, 2016], [1900, 2188], [2048, 2359]]
-var src = 'ModelMMicrocontroller';
+let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350], [2048, 1536]]
+var src = 'ModelMBluePCB';
 var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/proj/images/';
 var doLossless = false;
 

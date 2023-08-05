@@ -25,8 +25,8 @@ public class Auto {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
-        String input = "256\u00D7295, 830\u00D7956, 1150\u00D71325, 1380\u00D71589, 1570\u00D71808, 1750\u00D72016, 1900\u00D72188, 2048\u00D72359";
-        String src="images/ModelMMicrocontroller.webp";
+        String input = "256\u00D7192, 830\u00D7623, 1150\u00D7863, 1510\u00D71133, 1800\u00D71350, 2048\u00D71536";
+        String src="images/ModelMBluePCB.webp";
         // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
