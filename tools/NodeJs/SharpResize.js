@@ -1,15 +1,15 @@
 const sharp = require('sharp');
 
-let dims = [[256, 139], [1130, 612], [1580, 856], [1920, 1040], [2048, 1109]]
-var src = 'WebserverVSCode';
+let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350], [2048, 1536]]
+var src = 'ModelMBluePCB';
 var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/proj/images/';
 var doLossless = false;
 
 for (var dim = 0; dim < dims.length; dim++) {
 
-    sharp(path + 'originals/' + src + ".png")
+    sharp(path + 'originals/' + src + ".webp")
         .resize(dims[dim][0], dims[dim][1], {
-            kernel: sharp.kernel.cubic,
+            kernel: sharp.kernel.cubic
         })
         .webp({
             smartSubsample: true,
