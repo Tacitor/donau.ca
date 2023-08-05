@@ -25,8 +25,8 @@ public class Auto {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
-        String input = "256\u00D7316, 684\u00D7843, 950\u00D71171, 1150\u00D71417, 1380\u00D71701, 1570\u00D71935, 1750\u00D72157, 1900\u00D72342, 2048\u00D72524";
-        String src="images/FileProcessorJSON.png";
+        String input = "256\u00D7338, 670\u00D7884, 906\u00D71195, 1150\u00D71517, 1340\u00D71767, 1510\u00D71992, 1660\u00D72190, 1800\u00D72374, 1930\u00D72546, 2048\u00D72701";
+        String src="images/FileProcessorContributors.png";
         // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
