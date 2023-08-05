@@ -1,7 +1,7 @@
 const sharp = require('sharp');
 
-let dims = [[256, 338], [670, 884], [906, 1195], [1150, 1517], [1340, 1767], [1510, 1992], [1660, 2190], [1800, 2374], [1930, 2546], [2048, 2701]]
-var src = 'FileProcessorContributors';
+let dims = [[256, 105], [1009, 412], [1610, 657], [2048, 836]]
+var src = 'MinesweeperConnect';
 var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/proj/images/';
 var doLossless = false;
 
