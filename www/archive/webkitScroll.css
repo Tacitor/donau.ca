@@ -1,0 +1,20 @@
+/* Webkit Styles for the vertical scrollbar on all .html files in the donau family of pages.
+/* width */
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+    background: rgb(150, 150, 150);
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+    background: rgb(50, 50, 50);
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
