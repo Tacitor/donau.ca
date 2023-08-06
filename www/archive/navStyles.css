@@ -8,6 +8,11 @@
     font-family: rakkas;
 }
 
+html {
+    scrollbar-color: rgb(50, 50, 50) rgb(150, 150, 150);
+    scrollbar-width: thin;
+}
+
 body {
     margin: 0;
     padding: 0;
