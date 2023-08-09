@@ -1,3 +1,7 @@
+RewriteEngine on
+
 # Rewrite request to append ".html" extension to URL
+
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+
 RewriteRule (.+) $1.html [L, NC]
