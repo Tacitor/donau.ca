@@ -1,15 +1,19 @@
-# mod_rewrite starts here
+# This allows mixed case requests (mod_speling)
+#Options -MultiViews
+#<IfModule mod_speling.c>
+#	CheckSpelling On
+#	CheckCaseOnly On
+#</IfModule>
 
 RewriteEngine on
 
-# Does not apply to existing directories.
+# Rewrite request to append file extension. eg. "/foo" to "/foo.html"
 
-RewriteCond %{REQUEST_FILENAME} !-d
+# This first line checks for a slash at the end
+RewriteCond %{REQUEST_URI} !(\.\w{2,4}|/)$
 
-# Check for the file in directory with .html extensions
+# Now checks to see if the file really exists
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 
-RewriteCond %{REQUEST_FILENAME}\.html -f
-
-# Here we actually show the page that has the .html extension
-
-RewriteRule ^(.*)$ $1.html [NC,L]
+# Slap on the .html to the end of the requested URI
+RewriteRule (.+) $1.html [L,NC]
