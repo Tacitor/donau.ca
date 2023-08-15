@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//java -jar .\GitHubActionFindAndReplace.jar "C:\\Users\\Lukas\\OneDrive\\OneDrive - University of Guelph\\Documents\\ICS\\donau.ca\\www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
 /**
  *
  * @author Lukas
@@ -28,27 +29,38 @@ public class GitHubActionFindAndReplace {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        String rootDirString = "C:\\Users\\Lukas\\OneDrive\\OneDrive - University of Guelph\\Documents\\ICS\\donau.ca\\www";
-        String findString = "This is a contrived test String used to test out the new GitHub Actions I am setting up.";
-        String replaceString = "hey cool it worked!";
-        String[] fileExtensions = new String[]{"html"};
+        // Check if there are 3 command line args
+        /*
+        System.out.println("Arg [0]: " + args[0]);
+        System.out.println("Arg [1]: " + args[1]);
+        System.out.println("Arg [2]: " + args[2]);
+         */
+        if (args.length == 3) {
+            //example of the program being run from a windows system:
+            //java -jar .\GitHubActionFindAndReplace.jar "C:\\Users\\Lukas\\OneDrive\\OneDrive - University of Guelph\\Documents\\ICS\\donau.ca\\www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
+            String rootDirString = args[0];
+            String findString = args[1];
+            String replaceString = args[2];
+            String[] fileExtensions = new String[]{"html"};
 
-        File rootDirFile = new File(rootDirString);
+            File rootDirFile = new File(rootDirString);
 
-        findAllFiles(fileExtensions, rootDirFile);
+            findAllFiles(fileExtensions, rootDirFile);
 
-        try {
-            searchAllFiles(findString);
+            try {
+                searchAllFiles(findString);
 
-            System.out.println("Files to repalce in:");
-            for (File file : filesToSearch) {
+                //System.out.println("Files to repalce in:");
+                for (File file : filesToSearch) {
 
-                System.out.println(file.getName());
-                findAndReplaceFile(file, findString, replaceString);
+                    //System.out.println(file.getName());
+                    findAndReplaceFile(file, findString, replaceString);
+                }
+            } catch (FileNotFoundException ex) {
+                System.err.println("Not able to search the files:\n" + ex);
             }
-        } catch (FileNotFoundException ex) {
-            System.err.println("Not able to search the files:\n" + ex);
+        } else {
+            System.out.println("Error: You must run the program from the command line and use include the 3 required command line arguments.");
         }
 
     }
