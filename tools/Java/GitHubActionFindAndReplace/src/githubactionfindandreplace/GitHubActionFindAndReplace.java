@@ -5,12 +5,14 @@
  */
 package githubactionfindandreplace;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -30,7 +32,7 @@ public class GitHubActionFindAndReplace {
         String rootDirString = "C:\\Users\\Lukas\\OneDrive\\OneDrive - University of Guelph\\Documents\\ICS\\donau.ca\\www";
         String findString = "This is a contrived test String used to test out the new GitHub Actions I am setting up.";
         String replaceString = "hey cool it worked!";
-        String[] fileExtensions = new String[]{"html", "txt"};
+        String[] fileExtensions = new String[]{"html"};
 
         File rootDirFile = new File(rootDirString);
 
@@ -43,11 +45,59 @@ public class GitHubActionFindAndReplace {
             for (File file : filesToSearch) {
 
                 System.out.println(file.getName());
+                findAndReplaceFile(file, findString, replaceString);
             }
         } catch (FileNotFoundException ex) {
             System.err.println("Not able to search the files:\n" + ex);
         }
 
+    }
+
+    public static void findAndReplaceFile(File file, String findString, String replaceString) {
+        StringBuilder oldContentBuilder = new StringBuilder();
+        String contentOld;
+        String newContent;
+
+        BufferedReader reader = null;
+
+        FileWriter writer = null;
+
+        String line;
+
+        try {
+            reader = new BufferedReader(new FileReader(file));
+
+            //Reading all the lines of input text file into oldContent
+            line = reader.readLine();
+
+            while (line != null) {
+                oldContentBuilder.append(line);
+                oldContentBuilder.append(System.lineSeparator());
+
+                line = reader.readLine();
+            }
+
+            //Replacing oldString with newString in the oldContent
+            contentOld = oldContentBuilder.toString();
+            newContent = contentOld.replaceAll(findString, replaceString);
+
+            //Rewriting the input text file with newContent
+            writer = new FileWriter(file);
+
+            writer.write(newContent);
+        } catch (IOException e) {
+            System.err.println("Error: \n" + e);
+        } finally {
+            try {
+                //Closing the resources
+
+                reader.close();
+
+                writer.close();
+            } catch (IOException e) {
+                System.err.println("Error: \n" + e);
+            }
+        }
     }
 
     public static void searchAllFiles(String find) throws FileNotFoundException {
@@ -61,19 +111,19 @@ public class GitHubActionFindAndReplace {
             //reset the hit
             hit = false;
             scanner = new Scanner(file);
-            
+
             while (!hit && scanner.hasNextLine()) {
                 line = scanner.nextLine();
-                
+
                 if (line.contains(find)) {
                     //System.out.println("Found:\t\t" + line + "\nFile: " + file.getAbsolutePath());
                     hit = true;
                     retainList.add(file);
                 }
-                
+
             }
         }
-        
+
         filesToSearch.retainAll(retainList);
 
     }
