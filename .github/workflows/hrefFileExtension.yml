@@ -18,3 +18,4 @@ jobs:
         run: |
           cd /home/pi/actions-runner/donau.ca_work/donau.ca/donau.ca/tools/Java/GitHubActionFindAndReplace/dist
           java -jar GitHubActionFindAndReplace.jar "/home/pi/actions-runner/donau.ca_work/donau.ca/donau.ca/www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
+        shell: bash
