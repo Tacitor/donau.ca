@@ -150,9 +150,6 @@ public class GitHubActionFindAndReplace {
         // base case
         if (!givenFile.isDirectory()) { // if not a folder
 
-            // Print file name
-            System.out.println(givenFile.getAbsolutePath());
-
             // grab file type
             fileTypeForUseInMethod = givenFile.getName().split("\\.", 0)[1];
             // check if type is good

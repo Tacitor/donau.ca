@@ -12,7 +12,8 @@ package javacommandlineargstool;
 public class JavaCommandLineArgsTool {
 
     // The command needed to run on linux to get the desired command line args
-    //java -jar JavaCommandLineArgsTool.jar "~/actions-runner/donau.ca_work/donau.ca/donau.ca/www/" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
+    //java -jar GitHubActionFindAndReplace.jar "/home/pi/actions-runner/donau.ca_work/donau.ca/donau.ca/www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
+    
     /**
      * @param args the command line arguments
      */
