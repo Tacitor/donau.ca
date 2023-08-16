@@ -18,7 +18,9 @@ public class JavaCommandLineArgsTool {
         if (args.length == 0) {
             System.err.println("Error: You must run the program from the command line and use include the 3 required command line arguments.");
         } else {
-            
+            for (int i = 0; i < args.length; i++) {
+                System.out.println("Arg[" + i + "]: " + args[i]);
+            }
         }
     }
     
