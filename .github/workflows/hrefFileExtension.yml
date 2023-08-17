@@ -7,6 +7,7 @@ on:
       - closed
     branches:
       - master
+  workflow_dispatch:
     
 jobs:
   deploy_on_pi:
