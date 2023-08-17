@@ -1,11 +1,17 @@
 name: Find and Replace Href File Extension
 
+# only trigger on pull request closed events
 on:
-  workflow_dispatch
+  pull_request:
+    types:
+      - closed
+    branches:
+      - master
     
 jobs:
   deploy_on_pi:
     name: Deploy to Raspberry Pi Server
+    if: github.event.pull_request.merged == true
   
     runs-on: [self-hosted, linux, ARM]
     
