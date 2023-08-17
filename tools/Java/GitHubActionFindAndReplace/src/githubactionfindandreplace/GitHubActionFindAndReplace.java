@@ -31,13 +31,16 @@ public class GitHubActionFindAndReplace {
     public static void main(String[] args) {
         // Check if there are 3 command line args
         /*
-        System.out.println("Arg [0]: " + args[0]);
-        System.out.println("Arg [1]: " + args[1]);
-        System.out.println("Arg [2]: " + args[2]);
+         * System.out.println("Arg [0]: " + args[0]);
+         * System.out.println("Arg [1]: " + args[1]);
+         * System.out.println("Arg [2]: " + args[2]);
          */
         if (args.length == 3) {
-            //example of the program being run from a windows system:
-            //java -jar .\GitHubActionFindAndReplace.jar "C:\\Users\\Lukas\\OneDrive\\OneDrive - University of Guelph\\Documents\\ICS\\donau.ca\\www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
+            // example of the program being run from a windows system:
+            // java -jar .\GitHubActionFindAndReplace.jar
+            // "C:\\Users\\Lukas\\OneDrive\\OneDrive - University of
+            // Guelph\\Documents\\ICS\\donau.ca\\www" ".html\"
+            // data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
             String rootDirString = args[0];
             String findString = args[1];
             String replaceString = args[2];
@@ -50,17 +53,18 @@ public class GitHubActionFindAndReplace {
             try {
                 searchAllFiles(findString);
 
-                //System.out.println("Files to repalce in:");
+                // System.out.println("Files to repalce in:");
                 for (File file : filesToSearch) {
 
-                    //System.out.println(file.getName());
+                    // System.out.println(file.getName());
                     findAndReplaceFile(file, findString, replaceString);
                 }
             } catch (FileNotFoundException ex) {
                 System.err.println("Not able to search the files:\n" + ex);
             }
         } else {
-            System.out.println("Error: You must run the program from the command line and use include the 3 required command line arguments.");
+            System.out.println(
+                    "Error: You must run the program from the command line and use include the 3 required command line arguments.");
         }
 
     }
@@ -79,7 +83,7 @@ public class GitHubActionFindAndReplace {
         try {
             reader = new BufferedReader(new FileReader(file));
 
-            //Reading all the lines of input text file into oldContent
+            // Reading all the lines of input text file into oldContent
             line = reader.readLine();
 
             while (line != null) {
@@ -89,11 +93,11 @@ public class GitHubActionFindAndReplace {
                 line = reader.readLine();
             }
 
-            //Replacing oldString with newString in the oldContent
+            // Replacing oldString with newString in the oldContent
             contentOld = oldContentBuilder.toString();
             newContent = contentOld.replaceAll(findString, replaceString);
 
-            //Rewriting the input text file with newContent
+            // Rewriting the input text file with newContent
             writer = new FileWriter(file);
 
             writer.write(newContent);
@@ -101,7 +105,7 @@ public class GitHubActionFindAndReplace {
             System.err.println("Error: \n" + e);
         } finally {
             try {
-                //Closing the resources
+                // Closing the resources
 
                 reader.close();
 
@@ -120,7 +124,7 @@ public class GitHubActionFindAndReplace {
         ArrayList<File> retainList = new ArrayList<>();
 
         for (File file : filesToSearch) {
-            //reset the hit
+            // reset the hit
             hit = false;
             scanner = new Scanner(file);
 
@@ -128,7 +132,8 @@ public class GitHubActionFindAndReplace {
                 line = scanner.nextLine();
 
                 if (line.contains(find)) {
-                    //System.out.println("Found:\t\t" + line + "\nFile: " + file.getAbsolutePath());
+                    // System.out.println("Found:\t\t" + line + "\nFile: " +
+                    // file.getAbsolutePath());
                     hit = true;
                     retainList.add(file);
                 }
@@ -142,21 +147,21 @@ public class GitHubActionFindAndReplace {
 
     public static void findAllFiles(String[] validExtensions, File givenFile) {
 
-        //base case
-        if (!givenFile.isDirectory()) { //if not a folder
+        // base case
+        if (!givenFile.isDirectory()) { // if not a folder
 
-            //grab file type
+            // grab file type
             fileTypeForUseInMethod = givenFile.getName().split("\\.", 0)[1];
-            //check if type is good
+            // check if type is good
             for (String str : validExtensions) {
 
                 if (fileTypeForUseInMethod.equals(str)) {
-                    //add it to the list
+                    // add it to the list
                     filesToSearch.add(givenFile);
                 }
             }
 
-        } else { //grab all the sub files in the directorie
+        } else { // grab all the sub files in the directorie
             File[] currentSubFiles = givenFile.listFiles();
 
             for (File file : currentSubFiles) {

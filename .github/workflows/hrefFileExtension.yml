@@ -4,17 +4,18 @@ on:
   workflow_dispatch
     
 jobs:
-  build:
+  deploy_on_pi:
+    name: Deploy to Raspberry Pi Server
   
-    runs-on: self-hosted
+    runs-on: [self-hosted, linux, ARM]
     
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout the main branch
+        uses: actions/checkout@v3
         with:
           ref: main
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
-          find: "This is a contrived test String used to test out the new GitHub Actions I am setting up."
-          replace: "hey cool it worked!"
-          regex: false
+      - name: Change directory to Java Archive path and run
+        run: |
+          cd /home/pi/actions-runner/donau.ca_work/donau.ca/donau.ca/tools/Java/GitHubActionFindAndReplace/dist
+          java -jar GitHubActionFindAndReplace.jar "/home/pi/actions-runner/donau.ca_work/donau.ca/donau.ca/www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
+        shell: bash
