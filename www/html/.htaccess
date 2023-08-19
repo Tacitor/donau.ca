@@ -1,4 +1,7 @@
+#ErrorDocument 400 /errors/badrequest.html
+ErrorDocument 403 /errorDocuments/_403.html
 ErrorDocument 404 /errorDocuments/_404.html
+#ErrorDocument 500 /errors/serverr.html
 
 # This allows mixed case requests (mod_speling)
 #Options -MultiViews
