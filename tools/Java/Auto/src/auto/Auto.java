@@ -25,14 +25,14 @@ public class Auto {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
-        String input = "256\u00D7192, 830\u00D7623, 1150\u00D7863, 1510\u00D71133, 1800\u00D71350, 2048\u00D71536";
+        String input = "256×144, 1140×641, 1600×900, 1950×1097, 2250×1266, 2510×1412, 2750×1547, 2960×1665, 3170×1783, 3360×1890, 3540×1991, 3710×2087, 3870×2177, 4032×2268";
         String src="images/ModelMBluePCB.webp";
         // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
 
         // first pass is to convert the unicode char into an 'x'
-        String newInput[] = input.split("\u00D7", 0);
+        String newInput[] = input.split("×", 0);
 
         // rebuild with x's instead
         tempInput = new StringBuilder();
