@@ -1,3 +1,8 @@
+sup,
+sub {
+    line-height: 0;
+}
+
 .content {
     flex: 1;
 
@@ -23,6 +28,17 @@
     font-family: rakkas;
     text-align: left;
     text-transform: uppercase;
+}
+
+.sub_heading {
+    font-size: 32px;
+    line-height: 100%;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 .info_bar {
@@ -93,6 +109,12 @@
     color: #000000;
     text-decoration: none;
     line-height: 150%;
+}
+
+.txt_section_indent {
+    text-indent: 50px;
+    margin-bottom: 20px;
+    line-height: 170%;
 }
 
 .dual_imgs_div {
