@@ -1,13 +1,13 @@
 const sharp = require('sharp');
 
-let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350], [2048, 1536]]
-var src = 'ModelMBluePCB';
-var path = '/Users/Lukas/OneDrive/OneDrive - University of Guelph/Documents/ICS/donau.ca/www/html/proj/images/';
+let dims = [[256, 144], [1140, 641], [1600, 900], [1950, 1097], [2250, 1266], [2510, 1412], [2750, 1547], [2960, 1665], [3170, 1783], [3360, 1890], [3540, 1991], [3710, 2087], [3870, 2177], [4032, 2268]]
+var src = 'banner';
+var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/images/';
 var doLossless = false;
 
 for (var dim = 0; dim < dims.length; dim++) {
 
-    sharp(path + 'originals/' + src + ".webp")
+    sharp(path + 'originals/' + src + ".png")
         .resize(dims[dim][0], dims[dim][1], {
             kernel: sharp.kernel.cubic
         })
