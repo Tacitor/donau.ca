@@ -1,7 +1,7 @@
 const sharp = require('sharp');
 
-let dims = [[256, 144], [1140, 641], [1600, 900], [1950, 1097], [2250, 1266], [2510, 1412], [2750, 1547], [2960, 1665], [3170, 1783], [3360, 1890], [3540, 1991], [3710, 2087], [3870, 2177], [4032, 2268]]
-var src = 'banner';
+let dims = [[256, 366], [730, 1045], [1006, 1440], [1230, 1761], [1420, 2033], [1580, 2262], [1730, 2476]]
+var src = 'lighthouse_blur';
 var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/images/';
 var doLossless = false;
 
