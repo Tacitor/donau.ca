@@ -16,6 +16,15 @@
     text-transform: uppercase;
 }
 
+.sub_title {
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 100%;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 .info_bar {
     display: flex;
     flex-direction: row;
