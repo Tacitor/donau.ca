@@ -164,10 +164,9 @@
     line-height: 120%;
 }
 
-.contact_text_link_p {
-    margin-top: 10px;
-}
-
-.contact_text_link {
-    display: inline-block;
+.contact_text_link_anchor,
+.contact_text_link_anchor:link,
+.contact_text_link_anchor:visited,
+#contact_text_link_p {
+    color: #1470AF;
 }

@@ -97,8 +97,6 @@
     font-size: 24px;
     font-family: inconsolata;
     text-align: left;
-    color: #1470AF;
-    text-decoration: underline;
 
     margin-top: 40px;
 }
@@ -122,6 +120,18 @@
 .feature2_img {
     width: 100%;
     border-radius: 15px;
+}
+
+.more_proj_text_box {
+    font-size: 24px;
+    font-family: inconsolata;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    line-height: 150%;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .more_about_flexbox {
