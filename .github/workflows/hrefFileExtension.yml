@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: main
-      - name: Change directory to Java Archive path and run
+      - name: Change directory to path of Java Archive and run GitHubActionFindAndReplace.jar
         run: |
           cd /var/donau.ca/actions-runner/_donau.ca_work/donau.ca/donau.ca/tools/Java/GitHubActionFindAndReplace/dist
           java -jar GitHubActionFindAndReplace.jar "/var/donau.ca/actions-runner/_donau.ca_work/donau.ca/donau.ca/www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
