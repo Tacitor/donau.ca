@@ -1,8 +1,8 @@
 const sharp = require('sharp');
 
-let dims = [[256, 366], [730, 1045], [1006, 1440], [1230, 1761], [1420, 2033], [1580, 2262], [1730, 2476]]
-var src = 'lighthouse_blur';
-var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/images/';
+let dims = [[256, 181], [870, 615], [1200, 848], [1530, 1081], [1800, 1272], [2048, 1447]]
+var src = 'GeoEssayProduction';
+var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/proj/images/';
 var doLossless = false;
 
 for (var dim = 0; dim < dims.length; dim++) {
