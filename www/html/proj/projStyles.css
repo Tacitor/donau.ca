@@ -41,6 +41,11 @@ sub {
     margin-bottom: 20px;
 }
 
+.sub_heading_centre {
+    text-align: center;
+    text-transform: none;
+}
+
 .info_bar {
     display: flex;
     flex-direction: row;
@@ -115,6 +120,12 @@ sub {
     text-indent: 50px;
     margin-bottom: 20px;
     line-height: 170%;
+}
+
+.txt_section_hanging_indent {
+    padding-left: 90px;
+    text-indent: -90px;
+    line-height: 200%;
 }
 
 .dual_imgs_div {
@@ -237,4 +248,12 @@ tr:nth-child(odd) td {
     */
 
     border-radius: 10px;
+}
+
+.a_references {
+    color: #1470AF;
+}
+
+.a_references:visited {
+    color: #1470AF;
 }
