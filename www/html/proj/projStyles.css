@@ -230,9 +230,11 @@ tr:nth-child(odd) td {
 .img_section_single_img {
     width: 75%;
 
+    /*
     display: block;
     margin-left: auto;
     margin-right: auto;
+    */
 
     border-radius: 10px;
 }
