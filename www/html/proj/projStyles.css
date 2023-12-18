@@ -1,3 +1,8 @@
+sup,
+sub {
+    line-height: 0;
+}
+
 .content {
     flex: 1;
 
@@ -14,6 +19,31 @@
     font-family: rakkas;
     text-align: left;
     text-transform: uppercase;
+}
+
+.sub_title {
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 100%;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sub_heading {
+    font-size: 32px;
+    line-height: 100%;
+    font-family: rakkas;
+    text-align: left;
+    text-transform: uppercase;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.sub_heading_centre {
+    text-align: center;
+    text-transform: none;
 }
 
 .info_bar {
@@ -86,6 +116,18 @@
     line-height: 150%;
 }
 
+.txt_section_indent {
+    text-indent: 50px;
+    margin-bottom: 20px;
+    line-height: 170%;
+}
+
+.txt_section_hanging_indent {
+    padding-left: 90px;
+    text-indent: -90px;
+    line-height: 200%;
+}
+
 .dual_imgs_div {
     display: flex;
     flex-direction: row;
@@ -142,4 +184,76 @@
     color: rgb(50, 50, 50);
     text-decoration: none;
     line-height: 150%;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    border-color: rgb(50, 50, 50);
+
+    font-size: 20px;
+    font-family: inconsolata;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    border-color: rgb(50, 50, 50);
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(214, 214, 218);
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(234, 234, 238);
+}
+
+tr:nth-child(odd) td {
+    background-color: rgb(229, 229, 233);
+}
+
+.th_cluster {
+    width: 16%;
+}
+
+.th_sd_m {
+    width: 14%;
+}
+
+.td_cluster_heading {
+    text-align: left;
+}
+
+.tbl_footer {
+    font-size: 15px;
+    font-family: inconsolata;
+}
+
+.img_section_single_img {
+    width: 75%;
+
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
+
+    border-radius: 10px;
+}
+
+.a_references {
+    color: #1470AF;
+}
+
+.a_references:visited {
+    color: #1470AF;
 }

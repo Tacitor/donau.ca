@@ -1,8 +1,8 @@
 const sharp = require('sharp');
 
-let dims = [[256, 144], [1140, 641], [1600, 900], [1950, 1097], [2250, 1266], [2510, 1412], [2750, 1547], [2960, 1665], [3170, 1783], [3360, 1890], [3540, 1991], [3710, 2087], [3870, 2177], [4032, 2268]]
-var src = 'banner';
-var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/images/';
+let dims = [[256, 181], [870, 615], [1200, 848], [1530, 1081], [1800, 1272], [2048, 1447]]
+var src = 'GeoEssayProduction';
+var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/proj/images/';
 var doLossless = false;
 
 for (var dim = 0; dim < dims.length; dim++) {
