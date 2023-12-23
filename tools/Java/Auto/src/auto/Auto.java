@@ -25,8 +25,8 @@ public class Auto {
         // Example for the main output
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
-        String input = "256×181, 870×615, 1200×848, 1530×1081, 1800×1272, 2048×1447";
-        String src = "images/GeoEssayProduction.webp";
+        String input = "256×192, 830×623, 1150×863, 1510×1133, 1800×1350, 2048×1536";
+        String src = "images/GBABacklightExploded.webp";
         // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;
