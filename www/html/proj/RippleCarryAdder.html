@@ -77,29 +77,71 @@
 
                 <div class="txt_section">
                     After learning about Full Adders and Ripple Carry Adders in ENGG*2410 — Digital Systems Design in the Fall semester of 2023, I wanted to
-                    build an 8-Bit ripple carry adder at home.
+                    build an 8-Bit ripple carry adder at home. The issue being that I do not own a Xilinx FPGA and therefore would need a different strategy
+                    than the one used in ENGG*2410. Luckily though I had a few breadboards and Quad 2-input Logic ICs. Specifically, XOR, AND, and OR logic
+                    chips. Each 14 pin DIP logic chip had 4 logic gates on it. Each gate has two input pins and an output pin. This leaves one more pin of the
+                    DIP package for a VCC connection and then one more for ground. The first step in the process was to plan out the 8-Bit ripple carry adder. A
+                    plan of the logic was made using AutoCAD.
                 </div>
 
                 <div class="break_spacer"></div>
 
-                <div class="img_txt_section">
-                    <div class="img_txt_section_txt">
-                        <p class="proj_p">
-                            The first step in the process was disassemble the
-                            GBA and clean it.
-                        </p>
-                    </div>
+                <div class="single_imgs_div">
+                    <div class="single_imgs_single">
+                        <div class="image_desc">
+                            Note: This logic diagram scrolls horizontally.
+                        </div>
+                        <img class="single_imgs_img_smaller"
+                             src="images/originals/8BitLogic.svg"
+                             alt="A logic diagram of the adder circuit. Each full adder passes its carry out bit into the carry in bit of the following adder.">
 
-                    <div class="img_txt_section_img_div">
-                        <img class="img_txt_section_img" src="../images/originals/banner-old1.png"
-                             alt="View of the modded GBA in a partially disassembled state. New LCD is just laying on the desk near the GBA with ribbon cable connecting it.">
+                        <div class="image_desc">
+                            Each full adder passes its carry out bit into the carry in bit of the following adder.
+                        </div>
                     </div>
                 </div>
 
                 <div class="break_spacer"></div>
 
                 <div class="txt_section">
-                    The results were astounding.
+                    Then a new block diagram was made that incorporated the pinout of the DIP ICs. This was again made using AutoCAD and like the above image it
+                    was exported as an SVG so that all the details can be zoomed in on.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_section_single_div">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            Text Text
+                        </p>
+                        <img class="img_section_single_img"
+                             src="../images/originals/banner-old1.png"
+                             alt="Line graph of historic electricity production in Germany by type of fuel">
+
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    Once this was done I began assembling the breadboards. I began by layout all the ICs I would need. In this project I made use of:
+
+                    <ul class="ul_li_proj">
+                        <li>4 x 74x86 Quad 2-input XOR IC</li>
+                        <li>4 x 74x08 Quad 2-input AND IC</li>
+                        <li>2 x 74x32 Quad 2-input OR IC</li>
+                        <li>2 x DIP 8 Switches Board</li>
+                        <li>2 x Full sized Breadboards</li>
+                        <li>1 x Mini Breadboard</li>
+                        <li>5 x 200Ω Resistors</li>
+                        <li>8 x 10KΩ small Resistors</li>
+                        <li>8 x 10KΩ larger Resistors</li>
+                        <li>Many many wires</li>
+                    </ul>
+
+                    The ICs were split up and places evenly across the two full sized breadboards. The final results can be seen below.
                 </div>
 
                 <div class="break_spacer"></div>
