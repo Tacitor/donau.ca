@@ -26,7 +26,7 @@ public class Auto {
         // let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350],
 
         String input = "256×192, 830×623, 1150×863, 1510×1133, 1800×1350, 2048×1536";
-        String src = "images/GBABacklightExploded.webp";
+        String src = "images/RippleCarryAdderPostCarry.webp";
         // =-=-=-=-=-= REMEMBER TO REMOVE ++ORIGINAL++ FROM THE SRC=-=-=-=-=-=
 
         StringBuilder tempInput;

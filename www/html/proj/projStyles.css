@@ -177,6 +177,11 @@ sub {
     border-radius: 10px;
 }
 
+.single_imgs_img_smaller {
+    width: 500%;
+    border-radius: 10px;
+}
+
 .image_desc {
     font-size: 20px;
     font-family: inconsolata;
@@ -250,10 +255,23 @@ tr:nth-child(odd) td {
     border-radius: 10px;
 }
 
+.img_section_single_img_SVG {
+    width: 100%;
+}
+
 .a_references {
     color: #1470AF;
 }
 
 .a_references:visited {
     color: #1470AF;
+}
+
+.ul_li_proj {
+    font-size: 24px;
+    font-family: inconsolata;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    line-height: 150%;
 }
