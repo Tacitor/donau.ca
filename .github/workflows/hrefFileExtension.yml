@@ -11,10 +11,10 @@ on:
     
 jobs:
   deploy_on_pi:
-    name: Deploy to Raspberry Pi Server
+    name: Deploy to deb12Server
     if: github.event.pull_request.merged == true
   
-    runs-on: [self-hosted, linux, ARM]
+    runs-on: [self-hosted, linux, X64]
     
     steps:
       - name: Checkout the main branch
